@@ -6,9 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
+    <!--
+    layout_width="match_parent" = ancho lo igual al del padre
+    layout_centerVertical="true" = centra el elemento a lo alto
+    gravity="center" = alinea el texto al centro
+    layout_height="wrap_content" = ancho al alto del elemento
+    -->
     <TextView
         android:id="@+id/textview_first"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:text="@string/hello_first_fragment"
         app:layout_constraintBottom_toTopOf="@id/button_first"
